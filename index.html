@@ -1,17 +1,147 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>Title</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="css/uikit.min.css" />
-      <link rel="stylesheet" href="css/kingclub.css" />
-      <script src="js/uikit.min.js"></script>
-      <script src="js/uikit-icons.min.js"></script>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Revalia&display=swap" rel="stylesheet">
-    </head>
-    <body style="background-color: #000;font-family: 'Montserrat';">
-    </body>
+    <title>King Club</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/kingclub.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Revalia&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Mobile Header -->
+    <div
+      class="
+        uk-navbar-container
+        header-wrap
+        uk-navbar-transparent
+        header-wrap
+        uk-container uk-hidden@s
+      "
+      uk-navbar="dropbar: true; mode: click;"
+    >
+      <div class="uk-navbar-left">
+        <a
+          class="uk-navbar-item uk-logo king-header-calendar"
+          href="#"
+          uk-icon="icon: calendar;ratio: 1.2"
+        ></a>
+      </div>
+      <div class="uk-navbar-center">
+        <a class="uk-navbar-item uk-logo" href="#"
+          ><img src="./images/logo.png" alt="logo" width="120px"
+        /></a>
+      </div>
+      <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+          <li>
+            <a
+              href="#"
+              class="uk-transition-toggle"
+              uk-icon="icon: menu;ratio: 1.2"
+            ></a>
+            <div class="uk-navbar-dropdown king-navbar-mobile">
+              <ul class="uk-nav uk-navbar-dropdown-nav">
+                <li><a href="#" class="">Фитнес</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Спорт заал</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Бассейн</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Вип өрөө</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Mobile Header END -->
+    <!-- Desktop Header -->
+    <div
+      class="
+        uk-navbar-container
+        header-wrap
+        uk-navbar-transparent
+        header-wrap
+        uk-container uk-visible@s
+      "
+      uk-navbar
+    >
+      <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="#"
+          ><img src="./images/logo.png" alt="logo" height="26px" width="90px"
+        /></a>
+      </div>
+      <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav">
+          <li><a href="#" class="">Фитнес</a></li>
+          <li><a href="#">Спорт заал</a></li>
+          <li><a href="#">Бассейн</a></li>
+          <li><a href="#">Вип өрөө</a></li>
+        </ul>
+      </div>
+      <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+          <li><a href="#" class=".uk-text-uppercase2">Хуваарь</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Desktop Header END -->
+    <!-- register alert -->
+    <div class="uk-alert-warning king-alert-wrapper uk-margin-remove" uk-alert>
+      <p class="uk-text-center uk-text-secondary">
+        Яг одоо боломжтой сургалтанд <a href="./register.html">БҮРТГҮҮЛЭХ</a>
+      </p>
+    </div>
+    <!-- register alert  END -->
+    <!-- main slider -->
+    <div
+      class="
+        uk-height-medium
+        uk-flex
+        uk-flex-right
+        uk-flex-column
+        uk-flex-middle
+        uk-background-cover
+        uk-light
+        king-slider
+      "
+      data-src="./images/main-slider.png"
+      uk-img
+    >
+      <h1 class="king-slider-title">Come back</h1>
+      <img class="king-slider-subtitle" src="./images/main-slider-text.png" />
+      <p class="king-slider-desc">ЭРҮҮЛ АМЬДРАЛЫН ХЭВ МАЯГ</p>
+      <a
+        href="#get-started"
+        class="
+          uk-button uk-button-default
+          king-button-white
+          uk-margin-large-top
+        "
+      >
+        ЯГ ОДОО ЭХЭЛ
+      </a>
+      <a
+        href="#about-us"
+        class="uk-margin-large-top uk-margin-xlarge-bottom"
+        uk-icon="icon: chevron-down;ratio: 2"
+        uk-scroll
+      ></a>
+    </div>
+    <!-- main slider END -->
+    <!-- about us section -->
+    <div id="about-us" style="height: 500px; margin-top: 150px">
+      Bidnii tuhai end bn. tur undur tavisan bolno.
+    </div>
+    <!-- about us section END -->
+    asdfasdf sdf asdfasdfa asdf
+  </body>
 </html>
