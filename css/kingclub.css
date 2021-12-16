@@ -224,10 +224,18 @@ input:checked ~ .checkmark:after {
   color: #fff;
   font-size: 12px;
   padding: 5px 20px;
-  border: 1px solid #fff;
+  border-bottom: 1px solid #636363;
   text-align: center;
 }
 /* category page end */
+/* footer */
+.footer {
+  background-color: #000;
+}
+.king-footer-copyright {
+  color: #636363;
+}
+/* footer end */
 /* Responsive Mobile */
 @media (max-width: 639px) {
   .king-alert-wrapper p {
