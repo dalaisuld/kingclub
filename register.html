@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/kingclub.css" />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
-    <script src="uikit/dist/js/uikit-icons.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
   </head>
   <style>
@@ -102,7 +101,7 @@
           <div class="uk-form-controls uk-width-1-1">
             <input
               class="uk-input"
-              id="form-stacked-text"
+              id="name"
               type="text"
               style="border-bottom: 1px solid#fff"
             />
@@ -136,7 +135,7 @@
       <div class="uk-form-controls">
         <input
           class="uk-input uk-form-width-medium"
-          id="form-stacked-text"
+          id="phone"
           type="text"
           style="border-bottom: 1px solid#fff"
         />
@@ -196,10 +195,10 @@
           Host: "smtp.gmail.com",
           Username: "bdalaisuld@gmail.com",
           Password: "imtwkukkoiojjwjx",
-          To: document.getElementById("email").value,
+          To: "Zp.tsengel@gmail.com",
           From: "kingclub@gmail.com",
-          Subject: "kingclub email ywuulla",
-          Body: "zuwulguu ywuulla",
+          Subject: "kingclub email",
+          Body: "и-мэйл = " + document.getElementById("email").value + "<br> нэр = " + document.getElementById("name").value + "<br> утас =" + document.getElementById("phone").value,
         }).then(function (message) {
           var element = document.getElementById("alert-warning");
           element.style.display = "block";
