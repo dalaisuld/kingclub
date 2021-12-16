@@ -7,8 +7,32 @@
         <link rel="stylesheet" href="css/uikit.min.css" />
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.min.js"></script>
+        <script src="uikit/dist/js/uikit-icons.min.js"></script>
     </head>
+    <style>
+        .footer {
+            padding: 30px 15px;
+        }
+    </style>
     <body style="background-color: #000;font-family: 'Montserrat';">
+        <div class="uk-navbar-container header-wrap uk-navbar-transparent uk-container uk-visible@s uk-navbar" uk-navbar="">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="#"><img src="./images/logo.png" alt="logo" height="26px" width="90px"></a>
+            </div>
+            <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav">
+                <li><a href="#" class="">Фитнес</a></li>
+                <li><a href="#">Спорт заал</a></li>
+                <li><a href="#">Бассейн</a></li>
+                <li><a href="#">Вип өрөө</a></li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                <li><a href="#" class=".uk-text-uppercase2">Хуваарь</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="uk-text-center" style="color:#fff; font-size: 45px;font-family: PlayfairDisplay;"">
             Бүртгүүлэх
         </div>
@@ -17,34 +41,41 @@
         </div>
         <div class="uk-flex-center uk-text-center uk-margin-large" uk-grid>
             <div class="uk-flex-first">
-                <label class="uk-form-label" for="form-stacked-text" style="color:#fff">НЭР</label>
+                <label class="uk-form-label" for="form-stacked-text" style="color:#fff; font-size: 12.5px;">НЭР</label>
                 <input class="uk-input uk-form-blank uk-form-width-medium" id="form-stacked-text" type="text" style="border-bottom: 2px solid#fff">
             </div>
             <div class="uk-flex-last">
-                <label class="uk-form-label" for="form-stacked-text" style="color:#fff">И-МЭЙЛ</label>
+                <label class="uk-form-label" for="form-stacked-text" style="color:#fff; font-size: 12.5px;">И-МЭЙЛ</label>
                 <input class="uk-input uk-form-blank uk-form-width-medium" id="form-stacked-text" type="text" style="border-bottom: 2px solid#fff">
             </div>
         </div>
         <div class="uk-text-center uk-margin-large">
-            <label class="uk-form-label" for="form-stacked-text" style="color:#fff">УТАС</label>
+            <label class="uk-form-label" for="form-stacked-text" style="color:#fff;font-size: 12.5px;">УТАС</label>
             <div class="uk-form-controls">
                 <input class="uk-input uk-form-blank uk-form-width-medium" id="form-stacked-text" type="text" style="border-bottom: 2px solid#fff">
             </div>
         </div>
-        <div class = "uk-text-center uk-margin uk-margin-large">
+        <div class = "uk-margin uk-text-center">
             <input class="uk-checkbox" type="checkbox"> <label style="color: #fff; font-size: 12px;">Дасгал, зөв хоололтын талаар мэдээлэл эмэйлээр авахыг хүсвэл энд дарна уу.</label>
         </div>
-        <div class="uk-text-center">
+        <div class="uk-text-center uk-margin-bottom">
             <button class="uk-button uk-button-default uk-text-bold" style="color:#000; background-color:#fff; font-size: 8px;">илгээх</button>
         </div>
-        <div class="uk-margin-large">
-            <div class="uk-text-center" style="font-family: 'Times New Roman', Times, serif;color:#fff; font-size: 12px;">
-                ХАЯГ: ИХ МОНГОЛ УЛСЫН ГУДАМЖ, 17-Р ХОРОО, ХАН-УУЛ ДҮҮРЭГ   |   УТАС: 88024023, 88025911
+        <div class="footer">
+            <div class="uk-text-center uk-margin" style=" color:#fff; font-size: 10px;">
+                <span style="font-family: 'Roboto';">ХАЯГ: ИХ МОНГОЛ УЛСЫН ГУДАМЖ, 17-Р ХОРОО, ХАН-УУЛ ДҮҮРЭГ   |   </span><span style="font-family: 'Montserrat';">УТАС: 88024023, 88025911</span>   
                 <a href="" class="uk-icon-justify uk-icon-facebook"></a>
                 <a href="" class="uk-icon-justify uk-icon-github"></a>
             </div>
-            <div class="uk-margin-large uk-text-center">
-                <a href="" class="uk-icon-justify uk-icon-faceboook"></a>
+            <div class="uk-text-center" style="color:#fff; font-size: 12px;">
+                <span uk-icon="icon: instagram;  ratio: 0.8" style="padding: 10px;"></span>
+                <span uk-icon="icon: facebook;  ratio: 0.8" style="padding: 10px;"></span>
+                <span uk-icon="icon: youtube; ratio: 0.8" style="padding: 10px;"></span>
+                <span uk-icon="icon: pinterest; ratio: 0.8" style="padding: 10px;"></span>
+                <span uk-icon="icon: linkedin; ratio: 0.8" style="padding: 10px;"></span>
+            </div>
+            <div class="uk-margin uk-text-center" style="font-size: .625rem;font-family: Circular,'Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: 700; color:#636363">
+                <sup>®</sup>2021 KING CLUB. ALL RIGHTS RESERVED.
             </div>
         </div>
     </body>
