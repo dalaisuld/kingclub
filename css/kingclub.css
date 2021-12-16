@@ -145,6 +145,9 @@ body {
   font-weight:700;
   padding: 3px 38px;
 }
+input:checked ~ .checkmark:after {
+  display: block;
+}
 /* category end */
 /* Responsive Mobile */
 @media (max-width: 639px) {
