@@ -236,6 +236,9 @@ input:checked ~ .checkmark:after {
   color: #636363;
 }
 /* footer end */
+.header-wrap-mobile .uk-navbar-dropdown-nav > li > a {
+  border-bottom: 1px solid #636363;
+}
 /* Responsive Mobile */
 @media (max-width: 639px) {
   .king-alert-wrapper p {
