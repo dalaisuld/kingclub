@@ -239,6 +239,9 @@ input:checked ~ .checkmark:after {
 .header-wrap-mobile .uk-navbar-dropdown-nav > li > a {
   border-bottom: 1px solid #636363;
 }
+.king-map-wrap iframe {
+  width: 100%;
+}
 /* Responsive Mobile */
 @media (max-width: 639px) {
   .king-alert-wrapper p {
