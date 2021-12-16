@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>King Club</title>
+    	<meta charset="utf-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    	<link rel="stylesheet" href="css/uikit.min.css" />
+    	<link rel="stylesheet" href="css/kingclub.css" />
+    	<script src="js/uikit.min.js"></script>
+    	<script src="js/uikit-icons.min.js"></script>
+    	<link rel="preconnect" href="https://fonts.googleapis.com" />
+    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    	<link href="https://fonts.googleapis.com/css2?family=Revalia&display=swap" rel="stylesheet"/>
+    </head>
+	<style>
+		.uk-table th {
+			color: #fff;
+			text-transform: none;
+		}
+		.uk-table td {
+			padding: 1rem 
+		}
+		.fkl-date-title {
+    		margin-bottom: 0.2rem;
+    		font-weight: 400;
+			font-family: "GT Sectra Fine",Georgia,"Times New Roman",Times,serif;
+			font-size: 1.25rem;
+			text-align: center;
+		}
+		.fkl-date {
+    		font-size: .7rem;
+			text-align: center;
+		}
+		.fkl-cal-td.fkl-class {
+			border-top: 1px solid rgba(255,255,255,.1);
+			cursor: pointer;
+			transition: .5s ease all;
+		}
+		.fkl-cal .fkl-cal-td {
+			height: 8em;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.fkl-class-title {
+			font-size: .8rem;
+		}
+		.fkl-time {
+			font-size: .6rem;
+			margin: 0.3rem 0 0.5rem;
+		}
+		.fkl-cal .fkl-cal-td .fkl-trainer {
+			font-size: .8rem;
+			margin-bottom: 0.2rem;
+			height: 8em;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.fkl-location, .fkl-cal .fkl-cal-td .fkl-sublocation {
+    		font-size: .7rem;
+		}
+		.fkl-sublocation {
+			font-size: .7rem;
+		}
+		.fkl-cal-td.fkl-class[data-location="Tower Bridge"]:hover {
+			background-color: #f5c05b;
+		}
+		.fkl-class-title{
+			font-size: .8rem;
+			text-transform: uppercase;
+    		font-weight: 700;
+		}
+		.fkl-cal-td.fkl-class {
+			border-top: 1px solid rgba(255,255,255,.1);
+			cursor: pointer;
+			transition: .5s ease all;
+			padding: 16px;
+		}
+		.fkl-trainer {
+			font-size: .8rem;
+			margin-bottom: 0.2rem;
+		}
+		.uk-table td {
+			padding: 0px;
+			vertical-align: top; 
+		}
+		.fkl-sublocation {
+			font-size: .7rem
+		}
+		.footer {
+            padding: 30px 15px;
+        }
+		*+.uk-table {
+			margin-top: 0px;
+		}
+	</style>
+    <body style="font-family: 'Montserrat';height: 100vh;">
+		<div class="uk-navbar-container header-wrap uk-navbar-transparent uk-container uk-visible@s uk-navbar" uk-navbar="">
+			<div class="uk-navbar-left">
+				<a class="uk-navbar-item uk-logo" href="#"><img src="./images/logo.png" alt="logo" height="26px" width="90px"></a>
+			</div>
+			<div class="uk-navbar-center">
+				<ul class="uk-navbar-nav">
+				<li><a href="#" class="">Фитнес</a></li>
+				<li><a href="#">Спорт заал</a></li>
+				<li><a href="#">Бассейн</a></li>
+				<li><a href="#">Вип өрөө</a></li>
+				</ul>
+			</div>
+			<div class="uk-navbar-right">
+				<ul class="uk-navbar-nav">
+				<li><a href="schedule.html" class=".uk-text-uppercase2">Хуваарь</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="uk-text-center" style="color:#000; font-size: 35px;font-family: PlayfairDisplay; background-color: #fff;padding-top:72px;padding: 2.5rem 0;">
+            Хуваарь
+        </div>
+        <table class="uk-table" style="background-color: #1f1f20;text-align: center;">
+			<thead>
+				<tr>
+					<th>
+						<div class="fkl-cal-th">
+						<div class="fkl-date-title">Friday</div>
+						<div class="fkl-date">18 Dec</div>
+					</div>
+					</th>
+					<th>
+						<div class="fkl-cal-th">
+						<div class="fkl-date-title">Saturday</div>
+						<div class="fkl-date">18 Dec</div>
+					</div>
+					</th>
+					<th>
+						<div class="fkl-cal-th">
+						<div class="fkl-date-title">Sunday</div>
+						<div class="fkl-date">18 Dec</div>
+					</div>
+					</th>
+					<th>
+						<div class="fkl-cal-th">
+						<div class="fkl-date-title">Monday</div>
+						<div class="fkl-date">18 Dec</div>
+					</div>
+					</th>
+					<th>
+						<div class="fkl-cal-th">
+						<div class="fkl-date-title">Tuesday</div>
+						<div class="fkl-date">18 Dec</div>
+					</div>
+					</th>
+					<th>
+						<div class="fkl-cal-th">
+						<div class="fkl-date-title">Wednesday</div>
+						<div class="fkl-date">18 Dec</div>
+					</div>
+					</th>
+					<th>
+						<div class="fkl-cal-th">
+						<div class="fkl-date-title">Today</div>
+						<div class="fkl-date">18 Dec</div>
+					</div>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+					<td>
+						<div class="fkl-cal-td fkl-class" data-id="761116" data-location="Canary Wharf" data-sublocation="Bank" data-description="Let it all go, lose yourself in the music and feel like a superstar. Learn some urban moves to take you from the studio to the club. No Dance experience needed." data-time="18:30 – 19:15" data-service="Dance Fit">
+							<div class="fkl-class-title">Dance Fit</div>
+							<div class="fkl-time">18:30 – 19:15</div>
+							<div class="fkl-trainer">Jenny Haynes</div>
+							<div class="fkl-location">Canary Wharf</div>
+							<div class="fkl-sublocation">Bank</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="footer uk-position-bottom-center">
+            <div class="uk-text-center uk-margin" style=" color:#fff; font-size: 10px;">
+                <span style="font-family: 'Roboto';">ХАЯГ: ИХ МОНГОЛ УЛСЫН ГУДАМЖ, 17-Р ХОРОО, ХАН-УУЛ ДҮҮРЭГ   |   </span><span style="font-family: 'Montserrat';">УТАС: 88024023, 88025911</span>
+                <a href="" class="uk-icon-justify uk-icon-facebook"></a>
+                <a href="" class="uk-icon-justify uk-icon-github"></a>
+            </div>
+            <div class="uk-text-center" style="color:#fff; font-size: 12px;">
+                <span uk-icon="icon: instagram;  ratio: 0.8" style="padding: 10px;"></span>
+                <span uk-icon="icon: facebook;  ratio: 0.8" style="padding: 10px;"></span>
+                <span uk-icon="icon: youtube; ratio: 0.8" style="padding: 10px;"></span>
+                <span uk-icon="icon: pinterest; ratio: 0.8" style="padding: 10px;"></span>
+                <span uk-icon="icon: linkedin; ratio: 0.8" style="padding: 10px;"></span>
+            </div>
+            <div class="uk-margin uk-text-center" style="font-size: .625rem;font-family: Circular,'Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: 700; color:#636363">
+                <sup>®</sup>2021 KING CLUB. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </body>
+</html>
