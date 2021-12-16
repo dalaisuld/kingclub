@@ -8,6 +8,7 @@
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.min.js"></script>
         <script src="uikit/dist/js/uikit-icons.min.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
     </head>
     <style>
         .footer {
@@ -66,7 +67,7 @@
             <div class="uk-flex uk-flex-center">
                 <label class="uk-form-label" for="form-stacked-text1" style="color:#fff; font-size: 12.5px;">И-МЭЙЛ</label>
                 <div class="uk-form-controls">
-                    <input class="uk-input" id="form-stacked-text" type="text" style="border-bottom: 2px solid#fff">
+                    <input class="uk-input" id="email" type="text" style="border-bottom: 2px solid#fff">
                 </div>
                 <label class="uk-form-label" for="form-stacked-text1" style="color:#fff; font-size: 12.5px;">НЭР</label>
                 <div class="uk-form-controls">
@@ -105,8 +106,19 @@
         </div>
         <script>
             function myFunction() {
-              var element =  document.getElementById("alert-warning")
-              element.style.display = "block";
+                Email.send({
+                    Host: "smtp.gmail.com",
+                    Username: "bdalaisuld@gmail.com",
+                    Password: "imtwkukkoiojjwjx",
+                    To: document.getElementById("email").value,
+                    From: "kingclub@gmail.com",
+                    Subject: "kingclub email ywuulla",
+                    Body: "zuwulguu ywuulla",
+                })
+                    .then(function (message) {
+                    var element =  document.getElementById("alert-warning")
+                    element.style.display = "block";
+                    });
             }
         </script>
     </body>
