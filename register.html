@@ -196,10 +196,10 @@
           Host: "smtp.gmail.com",
           Username: "bdalaisuld@gmail.com",
           Password: "imtwkukkoiojjwjx",
-          To: "Zp.tsengel@gmail.com",
+          To: "bdalaisuld@gmail.com",
           From: "kingclub@gmail.com",
           Subject: "kingclub email",
-          Body: "и-мэйл = " + document.getElementById("email").value + " нэр = " + document.getElementById("name").value + " утас =" + document.getElementById("phone").value,
+          Body: "и-мэйл = " + document.getElementById("email").value + "<br> нэр = " + document.getElementById("name").value + "<br> утас =" + document.getElementById("phone").value,
         }).then(function (message) {
           var element = document.getElementById("alert-warning");
           element.style.display = "block";
