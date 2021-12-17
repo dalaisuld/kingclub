@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="mn">
   <head>
     <title>King Club | Ангилал</title>
     <meta charset="utf-8" />
@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="css/kingclub.css" />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
-    <!-- <script src="js/kingclub.js"></script> -->
-    <script type="text/javascript">
-      // self executing function here
+    <script>
       (function () {
         var hash = window.location.hash.substr(1);
 
@@ -27,7 +25,7 @@
                 var element = document.getElementById("fitness");
                 var element2 = document.getElementById("fitness-wrap");
                 element.removeAttribute("hidden");
-                UIkit.scroll(document.body).scrollTo(element2);
+                UIkit.scroll("head").scrollTo(element2);
               }, 100);
               break;
             case "zaal":
@@ -35,7 +33,7 @@
                 var element = document.getElementById("zaal");
                 var element2 = document.getElementById("zaal-wrap");
                 element.removeAttribute("hidden");
-                UIkit.scroll(document.body).scrollTo(element2);
+                UIkit.scroll("head").scrollTo(element2);
               }, 100);
               break;
             case "bassein":
@@ -43,7 +41,7 @@
                 var element = document.getElementById("bassein");
                 var element2 = document.getElementById("bassein-wrap");
                 element.removeAttribute("hidden");
-                UIkit.scroll(document.body).scrollTo(element2);
+                UIkit.scroll("head").scrollTo(element2);
               }, 100);
               break;
             case "vip":
@@ -51,7 +49,7 @@
                 var element = document.getElementById("vip");
                 var element2 = document.getElementById("vip-wrap");
                 element.removeAttribute("hidden");
-                UIkit.scroll(document.body).scrollTo(element2);
+                UIkit.scroll("head").scrollTo(element2);
               }, 100);
           }
         }
@@ -182,7 +180,6 @@
 
             <p class="king-cat-more">ДЭЛГЭРЭНГҮЙ</p>
             <a
-              href="javascript:void(0);"
               onclick="openFitness()"
               class="uk-margin-remove-top uk-align-center"
               uk-icon="icon: chevron-down;ratio: 2"
@@ -377,7 +374,6 @@
 
             <p class="king-cat-more">ДЭЛГЭРЭНГҮЙ</p>
             <a
-              href="javascript:void(0);"
               onclick="openZaal()"
               class="uk-margin-remove-top uk-align-center"
               uk-icon="icon: chevron-down;ratio: 2"
@@ -539,7 +535,6 @@
 
             <p class="king-cat-more">ДЭЛГЭРЭНГҮЙ</p>
             <a
-              href="javascript:void(0);"
               onclick="openBassein()"
               class="uk-margin-remove-top uk-align-center"
               uk-icon="icon: chevron-down;ratio: 2"
@@ -695,7 +690,6 @@
 
             <p class="king-cat-more">ДЭЛГЭРЭНГҮЙ</p>
             <a
-              href="javascript:void(0);"
               onclick="openVip()"
               class="uk-margin-remove-top uk-align-center"
               uk-icon="icon: chevron-down;ratio: 2"
