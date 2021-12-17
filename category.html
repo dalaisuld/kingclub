@@ -67,79 +67,94 @@
   <body>
     <!-- Mobile Header -->
     <div
-      class="
-        uk-navbar-container
-        header-wrap
-        uk-navbar-transparent
-        header-wrap-mobile
-        uk-container uk-hidden@s
-      "
-      uk-navbar="dropbar: true; mode: click;"
+      uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;"
+      style="background-color: #000"
     >
-      <div class="uk-navbar-left">
-        <a
-          class="uk-navbar-item uk-logo king-header-calendar"
-          href="#"
-          uk-icon="icon: calendar;ratio: 1.2"
-        ></a>
-      </div>
-      <div class="uk-navbar-center">
-        <a class="uk-navbar-item uk-logo" href="index.html"
-          ><img src="images/logo.png" alt="logo" width="120px" />
-        </a>
-      </div>
-      <div class="uk-navbar-right">
-        <ul class="uk-navbar-nav">
-          <li>
-            <a
-              href="#"
-              class="uk-transition-toggle"
-              uk-icon="icon: menu;ratio: 1.2"
-            ></a>
-            <div class="uk-navbar-dropdown king-navbar-mobile">
-              <ul class="uk-nav uk-navbar-dropdown-nav">
-                <li><a href="#fitness-wrap" uk-scroll>Фитнес</a></li>
-                <li><a href="#zaal-wrap" uk-scroll>Спорт заал</a></li>
-                <li><a href="#bassein-wrap" uk-scroll>Бассейн</a></li>
-                <li><a href="#vip-wrap" uk-scroll>Вип өрөө</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <nav
+        class="
+          uk-navbar-container
+          header-wrap
+          uk-navbar-transparent
+          header-wrap-mobile
+          uk-container uk-hidden@s
+        "
+        style="position: relative; z-index: 981"
+        uk-navbar="dropbar: true; mode: click;"
+      >
+        <div class="uk-navbar-left">
+          <a
+            class="uk-navbar-item uk-logo king-header-calendar"
+            href="#"
+            uk-icon="icon: calendar;ratio: 1.2"
+          ></a>
+        </div>
+        <div class="uk-navbar-center">
+          <a class="uk-navbar-item uk-logo" href="./index.html"
+            ><img src="images/logo.png" alt="logo" width="120px"
+          /></a>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav">
+            <li>
+              <a
+                href="#"
+                class="uk-transition-toggle"
+                uk-icon="icon: menu;ratio: 1.2"
+              ></a>
+              <div class="uk-navbar-dropdown king-navbar-mobile">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li><a href="#fitness-wrap" uk-scroll>Фитнес</a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a href="#zaal-wrap" uk-scroll>Спорт заал</a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a href="#bassein-wrap" uk-scroll>Бассейн</a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a href="#vip-wrap" uk-scroll>Вип өрөө</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
     <!-- Mobile Header END -->
     <!-- Desktop Header -->
     <div
-      class="
-        uk-navbar-container
-        header-wrap
-        uk-navbar-transparent
-        header-wrap
-        uk-container uk-visible@s
-      "
-      uk-navbar
+      uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;"
+      style="background-color: #000"
     >
-      <div class="uk-navbar-left">
-        <a class="uk-navbar-item uk-logo" href="index.html"
-          ><img src="images/logo.png" alt="logo" height="26px" width="90px"
-        /></a>
-      </div>
-      <div class="uk-navbar-center">
-        <ul class="uk-navbar-nav">
-          <li><a href="#fitness-wrap" uk-scroll>Фитнес</a></li>
-          <li><a href="#zaal-wrap" uk-scroll>Спорт заал</a></li>
-          <li><a href="#bassein-wrap" uk-scroll>Бассейн</a></li>
-          <li><a href="#vip-wrap" uk-scroll>Вип өрөө</a></li>
-        </ul>
-      </div>
-      <div class="uk-navbar-right">
-        <ul class="uk-navbar-nav">
-          <li>
-            <a href="./schedule.html" class=".uk-text-uppercase2">Хуваарь</a>
-          </li>
-        </ul>
-      </div>
+      <nav
+        class="
+          uk-navbar-container
+          header-wrap
+          uk-navbar-transparent
+          header-wrap
+          uk-container uk-visible@s
+        "
+        style="position: relative; z-index: 980"
+        uk-navbar
+      >
+        <div class="uk-navbar-left">
+          <a class="uk-navbar-item uk-logo" href="./index.html"
+            ><img src="images/logo.png" alt="logo" height="26px" width="90px"
+          /></a>
+        </div>
+        <div class="uk-navbar-center">
+          <ul class="uk-navbar-nav">
+            <li><a href="#fitness-wrap" uk-scroll>Фитнес</a></li>
+            <li><a href="#zaal-wrap" uk-scroll>Спорт заал</a></li>
+            <li><a href="#bassein-wrap" uk-scroll>Бассейн</a></li>
+            <li><a href="#vip-wrap" uk-scroll>Вип өрөө</a></li>
+          </ul>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav">
+            <li>
+              <a href="./schedule.html" class=".uk-text-uppercase2">Хуваарь</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
     <!-- Desktop Header END -->
     <div class="uk-margin-remove-top">
@@ -795,5 +810,60 @@
       </div>
       <!-- VIP END -->
     </div>
+    <!-- Footer -->
+    <footer class="footer" style="padding-top: 32px; padding-bottom: 32px">
+      <div
+        class="uk-text-center uk-margin"
+        style="
+          color: #fff;
+          font-size: 10px;
+          padding-top: 16px;
+          padding-right: 16px;
+          padding-left: 16px;
+        "
+      >
+        <span style="font-family: 'Roboto'"
+          >ХАЯГ: ИХ МОНГОЛ УЛСЫН ГУДАМЖ, 17-Р ХОРОО, ХАН-УУЛ ДҮҮРЭГ | </span
+        ><span style="font-family: 'Montserrat'">УТАС: 88024023, 88025911</span>
+        <a href="" class="uk-icon-justify uk-icon-facebook"></a>
+        <a href="" class="uk-icon-justify uk-icon-github"></a>
+      </div>
+      <div class="uk-text-center" style="color: #fff; font-size: 12px">
+        <a href="https://www.instagram.com/">
+          <span
+            uk-icon="icon: instagram;  ratio: 0.8"
+            style="padding: 10px"
+          ></span>
+        </a>
+        <a href="https://www.facebook.com/">
+          <span
+            uk-icon="icon: facebook;  ratio: 0.8"
+            style="padding: 10px"
+          ></span>
+        </a>
+        <a href="https://www.youtube.com/">
+          <span
+            uk-icon="icon: youtube;  ratio: 0.8"
+            style="padding: 10px"
+          ></span>
+        </a>
+        <a href="https://www.pinterest.com/">
+          <span
+            uk-icon="icon: pinterest;  ratio: 0.8"
+            style="padding: 10px"
+          ></span>
+        </a>
+        <a href="https://www.linkedin.com/">
+          <span
+            uk-icon="icon: linkedin;  ratio: 0.8"
+            style="padding: 10px"
+          ></span>
+        </a>
+      </div>
+      <div class="uk-margin uk-text-center king-footer-copyright">
+        ©2021 KING CLUB. ALL RIGHTS RESERVED.
+      </div>
+    </footer>
+    <!-- Footer END -->
   </body>
 </html>
