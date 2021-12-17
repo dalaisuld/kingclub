@@ -212,6 +212,7 @@ input:checked ~ .checkmark:after {
 }
 .king-teacher-info-section {
   max-width: 360px;
+  padding-top: 16px;
 }
 .king-teacher-info-section.fitness h1 {
   width: 170px;
