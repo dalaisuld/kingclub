@@ -18,82 +18,100 @@
   <body>
     <!-- Mobile Header -->
     <div
-      class="
-        uk-navbar-container
-        header-wrap
-        uk-navbar-transparent
-        header-wrap-mobile
-        uk-container uk-hidden@s
-      "
-      uk-navbar="dropbar: true; mode: click;"
+      uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;"
+      style="background-color: #000"
     >
-      <div class="uk-navbar-left">
-        <a
-          class="uk-navbar-item uk-logo king-header-calendar"
-          href="#"
-          uk-icon="icon: calendar;ratio: 1.2"
-        ></a>
-      </div>
-      <div class="uk-navbar-center">
-        <a class="uk-navbar-item uk-logo" href="./index.html"
-          ><img src="images/logo.png" alt="logo" width="120px"
-        /></a>
-      </div>
-      <div class="uk-navbar-right">
-        <ul class="uk-navbar-nav">
-          <li>
-            <a
-              href="#"
-              class="uk-transition-toggle"
-              uk-icon="icon: menu;ratio: 1.2"
-            ></a>
-            <div class="uk-navbar-dropdown king-navbar-mobile">
-              <ul class="uk-nav uk-navbar-dropdown-nav">
-                <li>
-                  <a href="./category.html#active=fitness" class="">Фитнесс</a>
-                </li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="./category.html#active=zaal">Спорт заал</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="./category.html#active=bassein">Бассейн</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="./category.html#active=vip">Вип өрөө</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <nav
+        class="
+          uk-navbar-container
+          header-wrap
+          uk-navbar-transparent
+          header-wrap-mobile
+          uk-container uk-hidden@s
+        "
+        style="position: relative; z-index: 980"
+        uk-navbar="dropbar: true; mode: click;"
+      >
+        <div class="uk-navbar-left">
+          <a
+            class="uk-navbar-item uk-logo king-header-calendar"
+            href="#"
+            uk-icon="icon: calendar;ratio: 1.2"
+          ></a>
+        </div>
+        <div class="uk-navbar-center">
+          <a class="uk-navbar-item uk-logo" href="./index.html"
+            ><img src="images/logo.png" alt="logo" width="120px"
+          /></a>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav">
+            <li>
+              <a
+                href="#"
+                class="uk-transition-toggle"
+                uk-icon="icon: menu;ratio: 1.2"
+              ></a>
+              <div class="uk-navbar-dropdown king-navbar-mobile">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li>
+                    <a href="./category.html#active=fitness" class=""
+                      >Фитнесс</a
+                    >
+                  </li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a href="./category.html#active=zaal">Спорт заал</a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a href="./category.html#active=bassein">Бассейн</a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a href="./category.html#active=vip">Вип өрөө</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
     <!-- Mobile Header END -->
     <!-- Desktop Header -->
     <div
-      class="
-        uk-navbar-container
-        header-wrap
-        uk-navbar-transparent
-        header-wrap
-        uk-container uk-visible@s
-      "
-      uk-navbar
+      uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;"
+      style="background-color: #000"
     >
-      <div class="uk-navbar-left">
-        <a class="uk-navbar-item uk-logo" href="./index.html"
-          ><img src="images/logo.png" alt="logo" height="26px" width="90px"
-        /></a>
-      </div>
-      <div class="uk-navbar-center">
-        <ul class="uk-navbar-nav">
-          <li><a href="./category.html#active=fitness" class="">Фитнесс</a></li>
-          <li><a href="./category.html#active=zaal">Спорт заал</a></li>
-          <li><a href="./category.html#active=bassein">Бассейн</a></li>
-          <li><a href="./category.html#active=vip">Вип өрөө</a></li>
-        </ul>
-      </div>
-      <div class="uk-navbar-right">
-        <ul class="uk-navbar-nav">
-          <li><a href="./schedule.html" class=".uk-text-uppercase2">Хуваарь</a></li>
-        </ul>
-      </div>
+      <nav
+        class="
+          uk-navbar-container
+          header-wrap
+          uk-navbar-transparent
+          header-wrap
+          uk-container uk-visible@s
+        "
+        style="position: relative; z-index: 980"
+        uk-navbar
+      >
+        <div class="uk-navbar-left">
+          <a class="uk-navbar-item uk-logo" href="./index.html"
+            ><img src="images/logo.png" alt="logo" height="26px" width="90px"
+          /></a>
+        </div>
+        <div class="uk-navbar-center">
+          <ul class="uk-navbar-nav">
+            <li>
+              <a href="./category.html#active=fitness" class="">Фитнесс</a>
+            </li>
+            <li><a href="./category.html#active=zaal">Спорт заал</a></li>
+            <li><a href="./category.html#active=bassein">Бассейн</a></li>
+            <li><a href="./category.html#active=vip">Вип өрөө</a></li>
+          </ul>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav">
+            <li>
+              <a href="./schedule.html" class=".uk-text-uppercase2">Хуваарь</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
     <!-- Desktop Header END -->
     <!-- register alert -->
@@ -162,7 +180,8 @@
               king-button-white
               uk-margin-large-top
             "
-          style="font-size: 12px;">
+            style="font-size: 12px"
+          >
             холбоо барих
           </a>
         </div>
@@ -279,127 +298,150 @@
             </div>
           </div>
         </div>
-        <div>
-          <div
+        <div uk-lightbox>
+          <a
             class="
               uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light
             "
+            href="images/g1.jpg"
             data-src="images/g1.jpg"
             uk-img
             style="height: 506px"
-          ></div>
+          ></a>
         </div>
       </div>
       <!-- first end -->
       <!-- second -->
-      <div class="king-gallery uk-child-width-1-3" uk-grid="masonry: true">
+      <div
+        class="king-gallery uk-child-width-1-3"
+        uk-grid="masonry: true"
+        uk-lightbox
+      >
         <div>
-          <div
+          <a
             class="
               uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light
             "
+            href="images/g2.jpg"
             data-src="images/g2.jpg"
             uk-img
             style="height: 366px"
-          ></div>
+          ></a>
         </div>
         <div>
-          <div
+          <a
             class="
               uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light
             "
+            href="images/g3.jpg"
             data-src="images/g3.jpg"
             uk-img
             style="height: 366px"
-          ></div>
+          ></a>
         </div>
         <div>
-          <div
+          <a
             class="
               uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light
             "
+            href="images/g4.jpg"
             data-src="images/g4.jpg"
             uk-img
             style="height: 366px"
-          ></div>
+          ></a>
         </div>
       </div>
       <!-- second end -->
       <!-- third -->
-      <div class="king-gallery uk-child-width-1-4@s" uk-grid="masonry: true">
+      <div
+        class="king-gallery uk-child-width-1-4@s"
+        uk-grid="masonry: true"
+        uk-lightbox
+      >
         <div>
-          <div
+          <a
             class="
               uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light
             "
+            href="images/g5.jpg"
             data-src="images/g5.jpg"
             uk-img
             style="height: 563px"
-          ></div>
+          ></a>
         </div>
         <div>
-          <div
+          <a
             class="
               uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light
             "
+            href="images/g6.jpg"
             data-src="images/g6.jpg"
             uk-img
             style="height: 563px"
-          ></div>
+          ></a>
         </div>
         <div>
-          <div
+          <a
             class="
               uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light
             "
+            href="images/g7.jpg"
             data-src="images/g7.jpg"
             uk-img
             style="height: 563px"
-          ></div>
+          ></a>
         </div>
         <div>
-          <div
+          <a
             class="
               uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light
             "
+            href="images/g8.jpg"
             data-src="images/g8.jpg"
             uk-img
             style="height: 563px"
-          ></div>
+          ></a>
         </div>
       </div>
       <!-- third end -->
       <!-- fourth -->
-      <div class="king-gallery uk-child-width-1-3@s" uk-grid="masonry: true">
+      <div
+        class="king-gallery uk-child-width-1-3@s"
+        uk-grid="masonry: true"
+        uk-lightbox
+      >
         <div>
-          <div
+          <a
             class="
               uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light
             "
+            href="images/g9.jpg"
             data-src="images/g9.jpg"
             uk-img
             style="height: 335px"
-          ></div>
+          ></a>
         </div>
         <div>
-          <div
+          <a
             class="
               uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light
             "
+            href="images/g10.jpg"
             data-src="images/g10.jpg"
             uk-img
             style="height: 335px"
-          ></div>
+          ></a>
         </div>
         <div>
-          <div
+          <a
             class="
               uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light
             "
+            href="images/g11.jpg"
             data-src="images/g11.jpg"
             uk-img
             style="height: 335px"
-          ></div>
+          ></a>
         </div>
       </div>
       <!-- fourth end -->
@@ -443,27 +485,32 @@
       <div class="uk-text-center" style="color: #fff; font-size: 12px">
         <a href="https://www.instagram.com/">
           <span
-          uk-icon="icon: instagram;  ratio: 0.8" style="padding: 10px"
+            uk-icon="icon: instagram;  ratio: 0.8"
+            style="padding: 10px"
           ></span>
         </a>
         <a href="https://www.facebook.com/">
           <span
-          uk-icon="icon: facebook;  ratio: 0.8" style="padding: 10px"
+            uk-icon="icon: facebook;  ratio: 0.8"
+            style="padding: 10px"
           ></span>
         </a>
         <a href="https://www.youtube.com/">
           <span
-          uk-icon="icon: youtube;  ratio: 0.8" style="padding: 10px"
+            uk-icon="icon: youtube;  ratio: 0.8"
+            style="padding: 10px"
           ></span>
         </a>
         <a href="https://www.pinterest.com/">
           <span
-          uk-icon="icon: pinterest;  ratio: 0.8" style="padding: 10px"
+            uk-icon="icon: pinterest;  ratio: 0.8"
+            style="padding: 10px"
           ></span>
         </a>
         <a href="https://www.linkedin.com/">
           <span
-          uk-icon="icon: linkedin;  ratio: 0.8" style="padding: 10px"
+            uk-icon="icon: linkedin;  ratio: 0.8"
+            style="padding: 10px"
           ></span>
         </a>
       </div>
