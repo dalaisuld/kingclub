@@ -116,8 +116,8 @@ body {
 }
 /* gallery end */
 .king-divider {
-  margin-top: 100px;
-  margin-bottom: 100px !important;
+  margin-top: 50px;
+  margin-bottom: 50px !important;
   margin-left: -14px;
 }
 /* category */
@@ -131,6 +131,7 @@ body {
   margin-top: 0;
 }
 .uk-card-default .uk-card-title.king-category-title {
+  font-family: "Montserrat";
   color: #fff;
 }
 .king-category p {
@@ -269,6 +270,9 @@ a:hover {
 .king-input-phone {
   width: 50%;
 }
+.king-category-button {
+  margin-top: 20px;
+}
 /* Responsive Mobile */
 @media (max-width: 639px) {
   .king-alert-wrapper p {
@@ -293,6 +297,21 @@ a:hover {
   .about-us-content {
     font-size: 20px;
     padding-bottom: 42px;
+  }
+  .uk-card-default .uk-card-title.king-category-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .king-category-desc {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .king-category-button {
+    margin-top: 0px;
+  }
+  .uk-card-body {
+    display: flow-root;
+    padding: 24px 30px;
   }
 }
 @media (max-width: 959px) {
