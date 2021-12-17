@@ -45,35 +45,104 @@
     }
   </style>
   <body>
+    <!-- Mobile Header -->
     <div
-      class="
-        uk-navbar-container
-        header-wrap
-        uk-navbar-transparent uk-container uk-visible@s uk-navbar
-      "
-      uk-navbar=""
+      uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;"
+      style="background-color: #000"
     >
-      <div class="uk-navbar-left">
-        <a class="uk-navbar-item uk-logo" href="./index.html"
-          ><img src="images/logo.png" alt="logo" height="26px" width="90px"
-        /></a>
-      </div>
-      <div class="uk-navbar-center">
-        <ul class="uk-navbar-nav">
-          <li><a href="./category.html#active=fitness" class="">Фитнес</a></li>
-          <li><a href="./category.html#active=zaal">Спорт заал</a></li>
-          <li><a href="./category.html#active=bassein">Бассейн</a></li>
-          <li><a href="./category.html#active=vip">Вип өрөө</a></li>
-        </ul>
-      </div>
-      <div class="uk-navbar-right">
-        <ul class="uk-navbar-nav">
-          <li>
-            <a href="./schedule.html" class=".uk-text-uppercase2">Хуваарь</a>
-          </li>
-        </ul>
-      </div>
+      <nav
+        class="
+          uk-navbar-container
+          header-wrap
+          uk-navbar-transparent
+          header-wrap-mobile
+          uk-container uk-hidden@s
+        "
+        style="position: relative; z-index: 981"
+        uk-navbar="dropbar: true; mode: click;"
+      >
+        <div class="uk-navbar-left">
+          <a
+            class="uk-navbar-item uk-logo king-header-calendar"
+            href="#"
+            uk-icon="icon: calendar;ratio: 1.2"
+          ></a>
+        </div>
+        <div class="uk-navbar-center">
+          <a class="uk-navbar-item uk-logo" href="./index.html"
+            ><img src="images/logo.png" alt="logo" width="120px"
+          /></a>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav">
+            <li>
+              <a
+                href="#"
+                class="uk-transition-toggle"
+                uk-icon="icon: menu;ratio: 1.2"
+              ></a>
+              <div class="uk-navbar-dropdown king-navbar-mobile">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li>
+                    <a href="./category.html#active=fitness" class=""
+                      >Фитнесс</a
+                    >
+                  </li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a href="./category.html#active=zaal">Спорт заал</a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a href="./category.html#active=bassein">Бассейн</a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a href="./category.html#active=vip">Вип өрөө</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
+    <!-- Mobile Header END -->
+    <!-- Desktop Header -->
+    <div
+      uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;"
+      style="background-color: #000"
+    >
+      <nav
+        class="
+          uk-navbar-container
+          header-wrap
+          uk-navbar-transparent
+          header-wrap
+          uk-container uk-visible@s
+        "
+        style="position: relative; z-index: 980"
+        uk-navbar
+      >
+        <div class="uk-navbar-left">
+          <a class="uk-navbar-item uk-logo" href="./index.html"
+            ><img src="images/logo.png" alt="logo" height="26px" width="90px"
+          /></a>
+        </div>
+        <div class="uk-navbar-center">
+          <ul class="uk-navbar-nav">
+            <li>
+              <a href="./category.html#active=fitness" class="">Фитнесс</a>
+            </li>
+            <li><a href="./category.html#active=zaal">Спорт заал</a></li>
+            <li><a href="./category.html#active=bassein">Бассейн</a></li>
+            <li><a href="./category.html#active=vip">Вип өрөө</a></li>
+          </ul>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav">
+            <li>
+              <a href="./schedule.html" class=".uk-text-uppercase2">Хуваарь</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Desktop Header END -->
     <div
       class="uk-alert-warning"
       id="alert-warning"
@@ -91,85 +160,123 @@
     >
       Бүртгүүлэх
     </div>
-    <div class="uk-text-center uk-margin" style="color: #fff; font-size: 12px">
+    <div
+      class="uk-text-center uk-margin uk-padding-small uk-margin-remove-top"
+      style="color: #fff; font-size: 12px"
+    >
       King Club-т бүртгүүлэхийг хүсвэл бидэнд дараах мэдээлэл илгээгээрэй.
     </div>
-    <div class="uk-margin-large uk-container-small uk-align-center">
+    <form>
       <div
-        class="uk-child-width-1-2@m uk-text-center uk-margin-medium-bottom"
-        uk-grid
+        class="
+          uk-margin-large
+          uk-container-small
+          uk-align-center
+          uk-padding-small
+          uk-margin-remove-bottom
+        "
       >
-        <div class="uk-flex uk-flex-column uk-flex-middle">
-          <label
-            class="uk-form-label"
-            for="form-stacked-text1"
-            style="color: #fff; font-size: 12.5px"
-            >НЭР</label
-          >
-          <div class="uk-form-controls uk-width-1-1">
-            <input
-              class="uk-input"
-              id="name"
-              type="text"
-              style="border-bottom: 1px solid#fff"
-            />
+        <div
+          class="uk-child-width-1-2@m uk-text-center uk-margin-remove-bottom"
+          uk-grid
+        >
+          <div class="uk-flex uk-flex-column uk-flex-middle">
+            <label
+              class="uk-form-label"
+              for="form-stacked-text1"
+              style="color: #fff; font-size: 12.5px"
+              >НЭР</label
+            >
+            <div class="uk-form-controls uk-width-1-1">
+              <input
+                class="uk-input"
+                id="name"
+                type="text"
+                required
+                style="border-bottom: 1px solid#fff"
+              />
+            </div>
           </div>
-        </div>
-        <div class="uk-flex uk-flex-column uk-flex-middle">
-          <label
-            class="uk-form-label"
-            for="form-stacked-text1"
-            style="color: #fff; font-size: 12.5px"
-            >И-МЭЙЛ</label
-          >
-          <div class="uk-form-controls uk-width-1-1">
-            <input
-              class="uk-input"
-              id="email"
-              type="text"
-              style="border-bottom: 1px solid#fff"
-            />
+          <div class="uk-flex uk-flex-column uk-flex-middle">
+            <label
+              class="uk-form-label"
+              for="form-stacked-text1"
+              style="color: #fff; font-size: 12.5px"
+              >И-МЭЙЛ</label
+            >
+            <div class="uk-form-controls uk-width-1-1">
+              <input
+                class="uk-input"
+                id="email"
+                type="text"
+                required
+                style="border-bottom: 1px solid#fff"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="uk-text-center uk-margin-large">
-      <label
-        class="uk-form-label"
-        for="form-stacked-text"
-        style="color: #fff; font-size: 12.5px"
-        >УТАС</label
+      <div
+        class="
+          uk-text-center uk-margin-large uk-margin-remove-top uk-padding-small
+        "
       >
-      <div class="uk-form-controls">
-        <input
-          class="uk-input uk-form-width-medium"
-          id="phone"
-          type="text"
-          style="border-bottom: 1px solid#fff"
-        />
+        <label
+          class="uk-form-label"
+          for="form-stacked-text"
+          style="color: #fff; font-size: 12.5px"
+          >УТАС</label
+        >
+        <div class="uk-form-controls">
+          <input
+            class="uk-input king-input-phone"
+            id="phone"
+            type="text"
+            required
+            style="border-bottom: 1px solid#fff"
+          />
+        </div>
       </div>
-    </div>
-    <div class="uk-margin uk-text-center uk-flex uk-flex-middle uk-flex-center">
-      <input class="uk-checkbox" type="checkbox" />
-      <!-- <span class="checkmark"></span> -->
-      <label style="color: #fff; font-size: 12px; margin-left: 10px"
-        >Дасгал, зөв хоололтын талаар мэдээлэл эмэйлээр авахыг хүсвэл энд дарна
-        уу.</label
+      <div
+        class="
+          uk-margin
+          uk-text-center
+          uk-flex
+          uk-flex-middle
+          uk-flex-center
+          uk-padding-small
+          uk-flex-wrap
+        "
       >
-    </div>
-    <div class="uk-text-center uk-margin-xlarge-bottom">
-      <button
-        class="uk-button uk-button-default uk-text-bold"
-        onclick="myFunction()"
-        style="color: #000; background-color: #fff; font-size: 8px"
-      >
-        илгээх
-      </button>
-    </div>
-    <div class="footer" style="padding-top: 32px; padding-bottom: 32px">
+        <input class="uk-checkbox" type="checkbox" />
+        <!-- <span class="checkmark"></span> -->
+        <label style="color: #fff; font-size: 12px; margin-left: 10px"
+          >Дасгал, зөв хоололтын талаар мэдээлэл имэйл-ээр авахыг хүсвэл энд
+          дарна уу.</label
+        >
+      </div>
+      <div class="uk-text-center uk-margin-xlarge-bottom">
+        <button
+          type="submit"
+          class="uk-button uk-button-default uk-text-bold"
+          onclick="myFunction()"
+          style="color: #000; background-color: #fff; font-size: 8px"
+        >
+          илгээх
+        </button>
+      </div>
+    </form>
+    <!-- Footer -->
+    <footer class="footer" style="padding-top: 32px; padding-bottom: 32px">
       <div
         class="uk-text-center uk-margin"
-        style="color: #fff; font-size: 10px"
+        style="
+          color: #fff;
+          font-size: 10px;
+          padding-top: 16px;
+          padding-right: 16px;
+          padding-left: 16px;
+        "
       >
         <span style="font-family: 'Roboto'"
           >ХАЯГ: ИХ МОНГОЛ УЛСЫН ГУДАМЖ, 17-Р ХОРОО, ХАН-УУЛ ДҮҮРЭГ | </span
@@ -212,7 +319,8 @@
       <div class="uk-margin uk-text-center king-footer-copyright">
         ©2021 KING CLUB. ALL RIGHTS RESERVED.
       </div>
-    </div>
+    </footer>
+    <!-- Footer END -->
     <script>
       function myFunction() {
         Email.send({

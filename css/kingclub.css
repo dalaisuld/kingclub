@@ -259,6 +259,9 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+.king-input-phone {
+  width: 50%;
+}
 /* Responsive Mobile */
 @media (max-width: 639px) {
   .king-alert-wrapper p {
@@ -288,5 +291,8 @@ a:hover {
 @media (max-width: 959px) {
   .king-category p {
     min-height: auto;
+  }
+  .king-input-phone {
+    width: 100%;
   }
 }
