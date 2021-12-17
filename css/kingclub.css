@@ -252,6 +252,16 @@ input:checked ~ .checkmark:after {
 .king-map-wrap iframe {
   width: 100%;
 }
+a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: #e5e5e5;
+  text-decoration: none;
+  cursor: pointer;
+}
 /* Responsive Mobile */
 @media (max-width: 639px) {
   .king-alert-wrapper p {
