@@ -4,6 +4,25 @@ body {
   background-color: #000;
 }
 /* General start */
+.uk-h1,
+.uk-h2,
+.uk-h3,
+.uk-h4,
+.uk-h5,
+.uk-h6,
+.uk-heading-2xlarge,
+.uk-heading-large,
+.uk-heading-medium,
+.uk-heading-small,
+.uk-heading-xlarge,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
+}
 .uk-navbar-nav > li > a {
   font-family: "Montserrat";
   font-weight: 500;
@@ -215,7 +234,7 @@ input:checked ~ .checkmark:after {
   padding-top: 16px;
 }
 .king-teacher-info-section.fitness h1 {
-  width: 170px;
+  width: 245px;
 }
 .king-teacher-info-section * {
   text-align: center;
@@ -235,6 +254,7 @@ input:checked ~ .checkmark:after {
 .king-pricing-title {
   font-size: 24px;
   color: #fff;
+  font-family: "Montserrat", sans-serif;
 }
 .uk-table th,
 .uk-table td {
