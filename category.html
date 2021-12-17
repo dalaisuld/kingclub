@@ -182,16 +182,21 @@
 
             <p class="king-cat-more">ДЭЛГЭРЭНГҮЙ</p>
             <a
-              href="#fitness"
+              href="javascript:void(0);"
               onclick="openFitness()"
               class="uk-margin-remove-top uk-align-center"
               uk-icon="icon: chevron-down;ratio: 2"
-              uk-scroll
             >
             </a>
             <script>
               function openFitness() {
-                document.getElementById("fitness").removeAttribute("hidden");
+                if (document.getElementById("fitness").hasAttribute("hidden")) {
+                  document.getElementById("fitness").removeAttribute("hidden");
+                } else {
+                  document
+                    .getElementById("fitness")
+                    .setAttribute("hidden", true);
+                }
               }
             </script>
           </div>
@@ -372,16 +377,19 @@
 
             <p class="king-cat-more">ДЭЛГЭРЭНГҮЙ</p>
             <a
-              href="#zaal"
+              href="javascript:void(0);"
               onclick="openZaal()"
               class="uk-margin-remove-top uk-align-center"
               uk-icon="icon: chevron-down;ratio: 2"
-              uk-scroll
             >
             </a>
             <script>
               function openZaal() {
-                document.getElementById("zaal").removeAttribute("hidden");
+                if (document.getElementById("zaal").hasAttribute("hidden")) {
+                  document.getElementById("zaal").removeAttribute("hidden");
+                } else {
+                  document.getElementById("zaal").setAttribute("hidden", true);
+                }
               }
             </script>
           </div>
@@ -531,16 +539,21 @@
 
             <p class="king-cat-more">ДЭЛГЭРЭНГҮЙ</p>
             <a
-              href="#bassein"
+              href="javascript:void(0);"
               onclick="openBassein()"
               class="uk-margin-remove-top uk-align-center"
               uk-icon="icon: chevron-down;ratio: 2"
-              uk-scroll
             >
             </a>
             <script>
               function openBassein() {
-                document.getElementById("bassein").removeAttribute("hidden");
+                if (document.getElementById("bassein").hasAttribute("hidden")) {
+                  document.getElementById("bassein").removeAttribute("hidden");
+                } else {
+                  document
+                    .getElementById("bassein")
+                    .setAttribute("hidden", true);
+                }
               }
             </script>
           </div>
@@ -682,16 +695,19 @@
 
             <p class="king-cat-more">ДЭЛГЭРЭНГҮЙ</p>
             <a
-              href="#vip"
+              href="javascript:void(0);"
               onclick="openVip()"
               class="uk-margin-remove-top uk-align-center"
               uk-icon="icon: chevron-down;ratio: 2"
-              uk-scroll
             >
             </a>
             <script>
               function openVip() {
-                document.getElementById("vip").removeAttribute("hidden");
+                if (document.getElementById("vip").hasAttribute("hidden")) {
+                  document.getElementById("vip").removeAttribute("hidden");
+                } else {
+                  document.getElementById("vip").setAttribute("hidden", true);
+                }
               }
             </script>
           </div>
