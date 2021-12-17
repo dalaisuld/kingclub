@@ -244,6 +244,7 @@ input:checked ~ .checkmark:after {
 }
 .king-footer-copyright {
   color: #636363;
+  font-size: 12px;
 }
 /* footer end */
 .king-map-wrap iframe {
